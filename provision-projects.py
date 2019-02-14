@@ -13,6 +13,7 @@ projectUrlsToRegister = [
 #        'https://github.com/RocketChat/Rocket.Chat',
 #        'https://github.com/INRIA/spoon',
 #        'https://github.com/bonitasoft/bonita-studio',
+        'https://github.com/eclipse-ee4j/glassfish',
         ]
 
 
