@@ -78,3 +78,23 @@ except requests.exceptions.HTTPError as e:
 with open('metrics.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerows(metrics)
+
+# now procesing factoids
+
+try:
+    r = requests.get(scavaApiGwUrl + '/administration/factoids', headers=headers)
+    r.raise_for_status()
+    factoids = []
+    row = []
+    factoids.append(["id", "name", "summary", "dependencies"])
+
+    for f in r.json():
+        row = [f['id'], f['name'], f['summary'], f['dependencies']]
+        factoids.append(row)
+
+except requests.exceptions.HTTPError as e:
+    print('error at retrieving metrics : {}'.format(e))
+
+with open('factoids.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(factoids)
