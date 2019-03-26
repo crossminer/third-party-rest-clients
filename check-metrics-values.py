@@ -13,6 +13,8 @@ if not envVariables <= set(os.environ.keys()):
     print('missing environment variable(s). Expected vars: {}'.format(envVariables))
     sys.exit()
 
+projectsWhitelist = [ 'XWikiwJIRA' ]
+
 scavaApiGwUrl = os.getenv('SCAVA_APIGW_URL').strip('/')
 
 headers = {'Content-Type': 'application/json'}
@@ -67,27 +69,28 @@ try:
         metricIds.append(m['id'])
 
     for projectKey in projectKeys:
-        print("## projectKey {}".format(projectKey))
-        hasValueCount = 0
-        metricIdsWValues = []
-        metricIdsWOValues = []
-        for metricId in metricIds:
-            r = requests.get(
-                scavaApiGwUrl + '/administration/projects/p/{}/m/{}'.format(projectKey, metricId), headers=headers)
-            r.raise_for_status()
+        if projectKey in projectsWhitelist:
+            print("## projectKey {}".format(projectKey))
+            hasValueCount = 0
+            metricIdsWValues = []
+            metricIdsWOValues = []
+            for metricId in metricIds:
+                r = requests.get(
+                    scavaApiGwUrl + '/administration/projects/p/{}/m/{}'.format(projectKey, metricId), headers=headers)
+                r.raise_for_status()
 
-            r = r.json()
-            if len(r['datatable']) > 0:
-                hasValueCount += 1
-                metricIdsWValues.append(metricId)
-            else:
-                metricIdsWOValues.append(metricId)
+                r = r.json()
+                if len(r['datatable']) > 0:
+                    hasValueCount += 1
+                    metricIdsWValues.append(metricId)
+                else:
+                    metricIdsWOValues.append(metricId)
 
-        print("project has {} metrics with datatable values".format(hasValueCount))
-        print("metrics with datatable not empty: {}".format(metricIdsWValues))
-        print("metrics with empty datatable: {}".format(metricIdsWOValues))
+            print("project has {} metrics with datatable values".format(hasValueCount))
+            print("metrics with datatable not empty: {}".format(metricIdsWValues))
+            print("metrics with empty datatable: {}".format(metricIdsWOValues))
 
-            # print("metricId => {}, datatable size => {}".format(metricId, len(r['datatable'])))
+                # print("metricId => {}, datatable size => {}".format(metricId, len(r['datatable'])))
 
 
 except requests.exceptions.HTTPError as e:
