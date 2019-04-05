@@ -13,7 +13,8 @@ if not envVariables <= set(os.environ.keys()):
     print('missing environment variable(s). Expected vars: {}'.format(envVariables))
     sys.exit()
 
-projectsWhitelist = [ 'XWikiwJIRA' ]
+# projectsWhitelist = [ 'xwikiwj', 'TestAdrian' ]
+projectsWhitelist = []
 
 scavaApiGwUrl = os.getenv('SCAVA_APIGW_URL').strip('/')
 
@@ -69,7 +70,7 @@ try:
         metricIds.append(m['id'])
 
     for projectKey in projectKeys:
-        if projectKey in projectsWhitelist:
+        if not projectsWhitelist or projectKey in projectsWhitelist:
             print("## projectKey {}".format(projectKey))
             hasValueCount = 0
             metricIdsWValues = []
