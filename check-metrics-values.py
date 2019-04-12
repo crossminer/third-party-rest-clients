@@ -57,21 +57,20 @@ try:
         scavaApiGwUrl + '/administration/projects', headers=headers)
     r.raise_for_status()
     projectKeys = []
-
 except requests.exceptions.HTTPError as e:
     print('error at retrieving projects : {}'.format(e))
-
-for m in r.json():
-    projectKeys.append(m['shortName'])
+else:
+    for m in r.json():
+        projectKeys.append(m['shortName'])
 
 try:
     r = requests.get(
         scavaApiGwUrl + '/administration/metrics', headers=headers)
     r.raise_for_status()
-    metricIds = []
-
 except requests.exceptions.HTTPError as e:
     print('error at retrieving metrics list: {}'.format(e))
+else:
+    metricIds = []
 
 for m in r.json():
     metricIds.append(m['id'])
