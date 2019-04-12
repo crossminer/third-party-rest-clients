@@ -1,189 +1,189 @@
-id,description,x,y,name,field,name,field,name,field,name,field
-bugs.cumulativeNewUsers,The number of new users up to and including the current date.,Date,Users,Date,$__date,Users,$cumulativeNumberOfNewUsers
-coreCommittersChurnBar,This metric shows the total accumulated churn per committer.,Committer,Churn,Committer,$value[0].value,Churn,$value[1].value
-CeJavaQuartilesHistoric,This metric shows the quartiles of Efferent coupling for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-bugs.cumulativePatches,The number of patches submitted up to and including the current date.,Date,Patches,Date,$__date,Patches,$cumulativeNumberOfPatches
-MPCJavaQuartilesHistoric,This metric shows the quartiles of Message passing coupling for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-newsgroups.cumulativeNewUsers,The number of new users up to and including the current date.,Date,Users,Date,$__date,Users,$cumulativeNumberOfNewUsers
-AHFJavaHistoric,This metric shows the Attribute Hiding Factor for Java over time.,Date,Val,Date,$__date,Val,$value
-bugs.severity.duplicateBugs.percentages,The percentage of duplicate bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfDuplicateBugs
-bugs.severity.sentimentAtThreadBeggining,The average sentiment at the beginning of threads per bug repository per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$sentimentAtThreadBeggining
-bugs.severity.fixedBugs,The number of fixed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfFixedBugs
-bugs.severity.duplicateBugs,The number of duplicate bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfDuplicateBugs
-designsmells.tightSmells,"The number of Tightly-coupled Module smells per day, up to and including the current date.",Date,Tightly-coupledModuleSmells,Date,$__date,Smells,$numberOfTightSmells
-CCHistogramJavaTimeLine,This metric shows the number of Java methods per CC risk factor over time.,Date,Count,Date,$__date,Factor,$value[0].value,Count,$value[1].value
-locPerLanguageTimeLine,This metric shows the physical lines of code per language over time.,Date,LOC,Date,$__date,Language,$value[0].value,LOC,$value[1].value
-bugs.requests-averageperday,"The average number of requests per day, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerDay
-newsgroups.emotions.articlePercentages,The percentages of articles containing each emotion,Date,Articles,Date,$__date,Emotion,$emotionLabel,Articles,$percentage
-bugs.cumulativereplies,The number of replies submitted up to and including the current date.,Date,Replies,Date,$__date,Replies,$cumulativeNumberOfReplies
-newsgroups.articles-threadaverage,"The average number of articles per thread, up to and including the current date.",Date,Articles,Date,$__date,Articles,$averageArticlesPerThread
-designsmells.imperativeSmells,"The number of Imperative Abstraction smells per day, up to and including the current date.",Date,ImperativeAbstractionSmells,Date,$__date,Smells,$numberOfImperativeSmells
-bugs.cumulativeNewBugs,The number of bugs submitted up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$cumulativeNumberOfBugs
-bugs.replies,The number of replies submitted every day.,Date,Replies,Date,$__date,Replies,$numberOfReplies
-MIFJavaQuartilesHistoric,This metric shows the quartiles of Method inheritance factor for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-newsgroups.cumulativereplies,The number of replies submitted up to and including the current date.,Date,Replies,Date,$__date,Replies,$cumulativeNumberOfReplies
-AJavaHistoric,This metric shows the Abstractness for Java over time.,Date,Val,Date,$__date,Val,$value
-bugs.requestsreplies-useraverage,"The average number of comments, requests and replies per user, up to and including the current date.",Date,"['Comments', 'Requests', 'Replies']",Date,$__date,Comments,$averageCommentsPerUser,Requests,$averageRequestsPerUser,Replies,$averageRepliesPerUser
-bugs.severity.sentimentAtThreadEnd,The average sentiment at the end of threads per bug repository per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$sentimentAtThreadEnd
-newsgroups.averageResponseTime,The average response time of threads addressed every day.,Date,Response Time,Date,$__date,Response Time,$avgResponseTime
-filesWithErrorPronenessTimeLine,"This metric shows the percentage of files with style violations which make the code error prone, over time.",Date,Percentage,Date,$__date,Percentage,$value
-designsmells.missingDepSmells,"The number of Missing Dependency smells per day, up to and including the current date.",Date,MissingDependencySmells,Date,$__date,Smells,$numberOfMissingDepSmells
-testCoverageHistoric,"This metric shows the history of the Java unit test coverage, estimated statically.",Date,Coverage,Date,$__date,Coverage,$value
-bugs.requestsreplies-bugaverage,"The average number of comments, requests and replies per bug, up to and including the current date.",Date,"['Comments', 'Requests', 'Replies']",Date,$__date,Comments,$averageCommentsPerBug,Requests,$averageRequestsPerBug,Replies,$averageRepliesPerBug
-newsgroups.cumulativeAverageResponseTime,The average response time of threads addressed up to and including the current date.,Date,Response Time,Date,$__date,Response Time,$cumulativeAvgResponseTime
-newsgroups.replies-threadaverage,"The average number of replies per thread, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerThread
-bugs.averageSentiment,The average sentiment per bug repository up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallAverageSentiment
-NOMJavaQuartilesHistoric,This metric shows the quartiles of Number of methods for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-bugs.averageResponseTime,The average response time of bugs addressed every day.,Date,Response Time,Date,$__date,Response Time,$avgResponseTime
-PFJavaHistoric,This metric shows the Polymorphism Factor for Java over time.,Date,Val,Date,$__date,Val,$value
-bugs.replies-averageperday,"The average number of replies per day, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerDay
-newsgroups.averageSentiment,The average sentiment per newsgroup up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallAverageSentiment
-newsgroups.requests-useraverage,"The average number of requests per user, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerUser
-bugs.requests-bugaverage,"The average number of requests per bug, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerBug
-commitsovertimeline,This metric shows a cumulative count of the commits.,Date,Commits,Date,$__date,Commits,$numberOfCommits,Repository,$url
-newsgroups.requestsreplies-averageperday,"The average number of comments, requests and replies per day, up to and including the current date.",Date,"['Articles', 'Requests', 'Replies']",Date,$__date,Articles,$averageArticlesPerDay,Requests,$averageRequestsPerDay,Replies,$averageRepliesPerDay
-newsgroups.sentimentAtThreadEnd,The average sentiment at the end of threads per newsgroup up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallSentimentAtThreadEnd
-NOCJavaQuartilesHistoric,This metric shows the quartiles of Number of children for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-bugs.comments,The number of comments submitted every day.,Date,Comments,Date,$__date,Comments,$numberOfComments
-bugs.averageResponseTime-bugs,"The average response time of bugs addressed every day, in relation to the number of bugs considered.",Threads,Response Time,Threads,$bugsConsidered,Response Time,$avgResponseTime
-bugs.comments-averageperday,"The average number of comments per day, up to and including the current date.",Date,Comments,Date,$__date,Comments,$averageCommentsPerDay
-bugs.bugs,"The number of bugs per day, up to and including the current date.",Date,Bugs,Date,$__date,Bugs,$numberOfBugs
-designsmells.deficientSmells,"The number of Deficient Encapsulation smells per day, up to and including the current date.",Date,DeficientEncapsulationSmells,Date,$__date,Smells,$numberOfDeficientSmells
-newsgroups.replies-useraverage,"The average number of replies per user, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerUser
-bugs.emotions.cumulativeComments,The cumulative number of comments containing each emotion,Date,Comments,Date,$__date,Emotion,$emotionLabel,Comments,$cumulativeNumberOfComments
-designsmells.weakenSmells,"The number of Weaken Modularity smells per day, up to and including the current date.",Date,WeakenModularitySmells,Date,$__date,Smells,$numberOfWeakenSmells
-LOCoverfilesovertime,This metric shows the distribution of physical lines of code over files over time.,Date,Gini,Date,$__date,Gini,$value
-newsgroups.replies,The number of replies submitted every day.,Date,Replies,Date,$__date,Replies,$numberOfReplies
-newsgroups.cumulativeArticles,The number of articles submitted up to and including the current date.,Date,Articles,Date,$__date,Articles,$cumulativeNumberOfArticles
-newsgroups.requestsreplies-useraverage,"The average number of articles, requests and replies per user, up to and including the current date.",Date,"['Articles', 'Requests', 'Replies']",Date,$__date,Articles,$averageArticlesPerUser,Requests,$averageRequestsPerUser,Replies,$averageRepliesPerUser
-bugs.severity,The number of bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfBugs
-bugs.bugOpenTime,The average time between creating and closing bugs.,Date,Bug Open Time,Date,$__date,Bug Open Time,$avgBugOpenTimeInDays
-bugs.wontFixBugs,The number of won't-fix bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfWontFixBugs
-newsgroups.comments-averageperday,"The average number of comments per day, up to and including the current date.",Date,Articles,Date,$__date,Articles,$averageArticlesPerDay
-TCCJavaQuartilesHistoric,This metric shows the quartiles of Tight class cohesion for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-bugs.severity.percentages,The percentage of bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentage
-bugs.users,"The number of users per day, up to and including the current date.",Date,Users,Date,$__date,Users,$numberOfUsers
-AdvancedLanguageFeaturesJavaQuartilesHistoric,This metric shows the quartiles of counts of advanced Java features over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-designsmells.multifacetedSmells,"The number of Multifaceted Abstraction smells per day, up to and including the current date.",Date,MultifacetedAbstractionSmells,Date,$__date,Smells,$numberOfMultifacetedSmells
-newsgroups.cumulativerequestsreplies,The number of requests and replies submitted up to and including the current date.,Date,"['Requests', 'Replies']",Date,$__date,Requests,$cumulativeNumberOfRequests,Replies,$cumulativeNumberOfReplies
-newsgroups.severity.averageSentiment,The average sentiment per bug newsgroup per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$averageSentiment
-newsgroups.cumulativeNewThreads,The number of new threads submitted up to and including the current date.,Date,Threads,Date,$__date,Threads,$cumulativeNumberOfNewThreads
-bugs.replies-useraverage,"The average number of replies per user, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerUser
-newsgroups.requests,The number of requests submitted every day.,Date,Requests,Date,$__date,Requests,$numberOfRequests
-designsmells.brokenSmells,"The number of Broken Hierarchy smells per day, up to and including the current date.",Date,BrokenHierarchySmells,Date,$__date,Smells,$numberOfBrokenSmells
-RRJavaHistoric,This metric shows the Reuse Ratio for Java over time.,Date,Val,Date,$__date,Val,$value
-bugs.cumulativeComments,The number of comments submitted up to and including the current date.,Date,Comments,Date,$__date,Comments,$cumulativeNumberOfComments
-bugs.requests,The number of requests submitted every day.,Date,Requests,Date,$__date,Requests,$numberOfRequests
-bugs.severity.nonResolvedClosedBugs.percentages,The percentage of non-resolved or closed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfNonResolvedClosedBugs
-newsgroups.severity,The number of newsgroup threads per severity level,Date,Threads,Date,$__date,Severity,$severityLevel,Threads,$numberOfThreads
-newsgroups.severity.percentages,The percentage of newsgroup threads per severity level,Date,Threads,Date,$__date,Severity,$severityLevel,Threads,$percentage
-NOAJavaQuartilesHistoric,This metric shows the quartiles of Number of attributes for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-newsgroups.averageResponseTime-threads,"The average response time of threads addressed every day, in relation to the number of threads considered.",Threads,Response Time,Threads,$threadsConsidered,Response Time,$avgResponseTime
-testCoveragePublicHistoric,"This metric shows the percentage of public Java methods covered by unit tests, over time.",Date,Coverage,Date,$__date,Coverage,$value
-numTestsHistoric,This metric shows the number of JUnit test methods over time.,Date,Count,Date,$__date,Count,$value
-designsmells.hairballSmells,"The number of Hairball Structure smells per day, up to and including the current date.",Date,HairballStructureSmells,Date,$__date,Smells,$numberOfHairballSmells
-bugs.invalidBugs,The number of invalid bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfInvalidBugs
-bugs.cumulativeAverageResponseTime-bugs,"The average response time of bugs addressed up to and including the current date, in relation to the number of bugs considered.",Threads,Response Time,Threads,$cumulativeBugsConsidered,Response Time,$cumulativeAvgResponseTime
-bugs.severity.fixedBugs.percentages,The percentage of fixed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfFixedBugs
-newsgroups.activeusers,"The number of active users per day, up to and including the current date.",Date,ActiveUsers,Date,$__date,ActiveUsers,$numberOfActiveUsers
-newsgroups.users,"The number of users per day, up to and including the current date.",Date,Users,Date,$__date,Users,$numberOfUsers
-bugs.inactiveusers,"The number of inactive users per day, up to and including the current date.",Date,InactiveUsers,Date,$__date,InactiveUsers,$numberOfInactiveUsers
-bugs.activeusers,"The number of active users per day, up to and including the current date.",Date,ActiveUsers,Date,$__date,ActiveUsers,$numberOfActiveUsers
-newsgroups.articles,The number of articles submitted every day.,Date,Articles,Date,$__date,Articles,$numberOfArticles
-newsgroups.sentiment,The average sentiment per newsgroup up to and including the processing date.,Date,"['Average Sentiment', 'Average Sentiment at Thread Beginning', 'Average Sentiment at Thread End']",Date,$__date,Average Sentiment,$overallAverageSentiment,Average Sentiment at Thread Beginning,$overallSentimentAtThreadBeggining,Average Sentiment at Thread End,$overallSentimentAtThreadEnd
-filesWithStyleViolationsTimeLine,This metric shows the percentage of files with style violations over time.,Date,Percentage,Date,$__date,Percentage,$value
-DITJavaQuartilesHistoric,This metric shows the quartiles of Depth of inheritance tree for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-AIFJavaQuartilesHistoric,This metric shows the quartiles of Attribute inheritance factor for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-bugs.comments-useraverage,"The average number of comments per user, up to and including the current date.",Date,Comments,Date,$__date,Comments,$averageCommentsPerUser
-bugs.requestsreplies-averageperday,"The average number of comments, requests and replies per day, up to and including the current date.",Date,"['Comments', 'Requests', 'Replies']",Date,$__date,Comments,$averageCommentsPerDay,Requests,$averageRequestsPerDay,Replies,$averageRepliesPerDay
-bugs.cumulativeAverageResponseTime,The average response time of bugs addressed up to and including the current date.,Date,Response Time,Date,$__date,Response Time,$cumulativeAvgResponseTime
-designsmells.unnecessarySmells,"The number of Unnecessary Abstraction smells per day, up to and including the current date.",Date,UnnecessaryAbstractionSmells,Date,$__date,Smells,$numberOfUnnecessarySmells
-ratioUnusedOSGiImportedPackages,This metric shows the ratio of OSGi Import-Package that are not actually used in the code.,Date,Ratio,Date,$__date,Ratio,$value
-spreadOfErrorPronenessTimeLine,"This metric shows the spread over the project's files of style violations which make the code error prone, over time.",Date,Spread,Date,$__date,Spread,$value
-bugs.replies-bugaverage,"The average number of replies per bug, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerBug
-bugs.severity.averageSentiment,The average sentiment per bug repository per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$averageSentiment
-newsgroups.severity.averageResponseTime,The number of newsgroup threads average response time per severity level,Date,Response Time,Date,$__date,Severity,$severityLevel,Response Time,$avgResponseTime
-commentedOutCodePerLanguageTimeLine,"This metric shows the number of lines with commented out code per language, over time.",Date,LOC,Date,$__date,Language,$value[0].value,LOC,$value[1].value
-bugs.severity.resolvedClosedBugs,The number of resolved or closed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfResolvedClosedBugs
-churnPerCommitterTimeLine,This metric shows the churn per committer over time.,Date,Churn,Date,$__date,Committer,$value[0].value,Churn,$value[1].value
-filesWithUnderstandabilityIssuesTimeLine,"This metric shows the percentage of files with style violations which indicate understandability issues, over time.",Date,Percentage,Date,$__date,Percentage,$value
-bugs.bugOpenTime-bugs,The average time between creating and closing bugs in relation to the number of bugs considered.,Bugs,Bug Open Time,Bugs,$bugsConsidered,Bug Open Time,$avgBugOpenTimeInDays
-bugs.requests-useraverage,"The average number of requests per user, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerUser
-bugs.nonResolvedClosedBugs,The number of non-resolved or open bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfNonResolvedClosedBugs
-bugs.patches,The number of patches submitted every day.,Date,Patches,Date,$__date,Patches,$numberOfPatches
-bugs.sentiment,The average sentiment per bug repository up to and including the processing date.,Date,"['Average Sentiment', 'Average Sentiment at Thread Beginning', 'Average Sentiment at Thread End']",Date,$__date,Average Sentiment,$overallAverageSentiment,Average Sentiment at Thread Beginning,$overallSentimentAtThreadBeggining,Average Sentiment at Thread End,$overallSentimentAtThreadEnd
-commitsPerDayTimeLine,This metric shows the number of commits per day over time.,Date,Commits,Date,$__date,Commits,$value
-LCCJavaQuartilesHistoric,This metric shows the quartiles of Loose class cohesion for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-bugs.cumulativerequestsreplies,The number of requests and replies submitted up to and including the current date.,Date,"['Requests', 'Replies']",Date,$__date,Requests,$cumulativeNumberOfRequests,Replies,$cumulativeNumberOfReplies
-newsgroups.requestsreplies,The number of requests and replies submitted every day.,Date,"['Requests', 'Replies']",Date,$__date,Requests,$numberOfRequests,Replies,$numberOfReplies
-newsgroups.articles-useraverage,"The average number of articles per user, up to and including the current date.",Date,Articles,Date,$__date,Articles,$averageArticlesPerUser
-newsgroups.cumulativeAverageResponseTime-threads,"The average response time of threads addressed up to and including the current date, in relation to the number of threads considered.",Threads,Response Time,Threads,$threadsConsidered,Response Time,$cumulativeAvgResponseTime
-LCOM4JavaQuartilesHistoric,This metric shows the quartiles of Lack of cohesion in methods 4 for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-newsgroups.emotions.articles,The number of articles containing each emotion,Date,Articles,Date,$__date,Emotion,$emotionLabel,Articles,$numberOfArticles
-bugs.severity.resolvedClosedBugs.percentages,The percentage of resolved or closed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfResolvedClosedBugs
-bugs.activeinactiveusers,"The number of users, active users and inactive users per day, up to and including the current date.",Date,"['Users', 'ActiveUsers', 'InactiveUsers']",Date,$__date,Users,$numberOfUsers,ActiveUsers,$numberOfActiveUsers,InactiveUsers,$numberOfInactiveUsers
-filesWithInefficienciesTimeLine,"This metric shows the percentage of files with style violations which indicate inefficiencies, over time.",Date,Percentage,Date,$__date,Percentage,$value
-bugs.requestsreplies,The number of requests and replies submitted every day.,Date,"['Requests', 'Replies']",Date,$__date,Requests,$numberOfRequests,Replies,$numberOfReplies
-newsgroups.replies-averageperday,"The average number of replies per day, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerDay
-bugs.comments-bugaverage,"The average number of comments per bug, up to and including the current date.",Date,Comments,Date,$__date,Comments,$averageCommentsPerBug
-newsgroups.requestsreplies-threadaverage,"The average number of articles, requests and replies per thread, up to and including the current date.",Date,"['Articles', 'Requests', 'Replies']",Date,$__date,Articles,$averageArticlesPerThread,Requests,$averageRequestsPerThread,Replies,$averageRepliesPerThread
-DACJavaQuartilesHistoric,This metric shows the quartiles of Data abstraction coupling for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-newsgroups.requests-threadaverage,"The average number of requests per thread, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerThread
-newsgroups.unansweredThreads,"The number of unanswered threads per day, up to and including the current date.",Date,Threads,Date,$__date,Threads,$numberOfUnansweredThreads
-churnPerCommitInTwoWeeksTimeLine,This metric shows the average churn per commit in two weeks over time.,Date,Churn,Date,$__date,Churn,$value
-CaJavaQuartilesHistoric,This metric shows the quartiles of Afferent coupling for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-cloneLOCPerLanguageTimeLine,"This metric shows the number of lines in Type I clones larger than 6 lines, per language, over time.",Date,LOC,Date,$__date,Language,$value[0].value,LOC,$value[1].value
-newsgroups.requests-averageperday,"The average number of requests per day, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerDay
-designsmells.missAbSmells,"The number of Missing Abstraction smells per day, up to and including the current date.",Date,MissingAbstractionSmells,Date,$__date,Smells,$numberOfMissAbSmells
-newsgroups.emotions.cumulativeArticlePercentages,The cumulative percentages of articles containing each emotion,Date,Articles,Date,$__date,Emotion,$emotionLabel,Articles,$cumulativePercentage
-newsgroups.newUsers,The number of new users every day.,Date,Users,Date,$__date,Users,$numberOfNewUsers
-RFCJavaQuartilesHistoric,This metric shows the quartiles of Response for class for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-bugs.severity.sentiment,Sentiment per bug repository per severity level.,Date,"['Average Sentiment', 'Average Sentiment at Thread Beginning', 'Average Sentiment at Thread End']",Date,$__date,Average Sentiment,$averageSentiment,Average Sentiment at Thread Beginning,$sentimentAtThreadBeggining,Average Sentiment at Thread End,$sentimentAtThreadEnd
-spreadOfUnderstandabilityIssuesTimeLine,"This metric shows the spread over the project's files of style violations which indicate understandability issues, over time.",Date,Spread,Date,$__date,Spread,$value
-newsgroups.severity.sentiment,Sentiment per newsgroup per severity level.,Date,"['Average Sentiment', 'Average Sentiment at Thread Beginning', 'Average Sentiment at Thread End']",Date,$__date,Average Sentiment,$averageSentiment,Average Sentiment at Thread Beginning,$sentimentAtThreadBeggining,Average Sentiment at Thread End,$sentimentAtThreadEnd
-bugs.severity.averageResponseTime,The number of bug average response time per severity level,Date,Response Time,Date,$__date,Severity,$severityLevel,Response Time,$avgResponseTime
-bugs.sentimentAtThreadBeggining,The average sentiment at the beginning of threads per bug repository up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallSentimentAtThreadBeggining
-bugs.emotions.commentPercentages,The percentages of comments containing each emotion,Date,Comments,Date,$__date,Emotion,$emotionLabel,Comments,$percentage
-LCOMJavaQuartilesHistoric,This metric shows the quartiles of Lack of cohesion in methods for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-headerPercentageTimeLine,This metric shows the percentage of files with a header over time.,Date,Percentage,Date,$__date,Percentage,$value
-bugs.fixedBugs,The number of fixed bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfFixedBugs
-newsgroups.severity.sentimentAtThreadBeggining,The average sentiment at the beginning of threads per bug newsgroup per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$sentimentAtThreadBeggining
-bugs.cumulativerequests,The number of requests submitted up to and including the current date.,Date,Requests,Date,$__date,Requests,$cumulativeNumberOfRequests
-IJavaQuartilesHistoric,This metric shows the quartiles of Instability for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-bugs.severity.wontFixBugs.percentages,The percentage of won't-fix bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfWontFixBugs
-spreadOfInefficienciesTimeLine,"This metric shows the spread over the project's files of style violations which indicate inefficiencies, over time.",Date,Spread,Date,$__date,Spread,$value
-newsgroups.newThreads,The number of new threads submitted every day.,Date,Threads,Date,$__date,Threads,$numberOfNewThreads
-MHFJavaHistoric,This metric shows the Method Hiding Factor for Java over time.,Date,Val,Date,$__date,Val,$value
-bugs.sentimentAtThreadEnd,The average sentiment at the end of threads per bug repository up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallSentimentAtThreadEnd
-bugs.severity.worksForMeBugs,The number of works-for-me bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfWorksForMeBugs
-newsgroups.activeinactiveusers,"The number of users, active users and inactive users per day, up to and including the current date.",Date,"['Users', 'ActiveUsers', 'InactiveUsers']",Date,$__date,Users,$numberOfUsers,ActiveUsers,$numberOfActiveUsers,InactiveUsers,$numberOfInactiveUsers
-bugs.emotions.comments,The number of comments containing each emotion,Date,Comments,Date,$__date,Emotion,$emotionLabel,Comments,$numberOfComments
-churnPerDayTimeLine,This metric shows the churn per day over time.,Date,Churn,Date,$__date,Churn,$value
-commentLinesPerLanguageTimeLine,"This metric shows the number of comment lines per language, over time.",Date,LOC,Date,$__date,Language,$value[0].value,LOC,$value[1].value
-newsgroups.inactiveusers,"The number of inactive users per day, up to and including the current date.",Date,InactiveUsers,Date,$__date,InactiveUsers,$numberOfInactiveUsers
-SRJavaHistoric,This metric shows the Specialization Ratio for Java over time.,Date,Val,Date,$__date,Val,$value
-CFJavaHistoric,This metric shows the Coupling Factor for Java over time.,Date,Val,Date,$__date,Val,$value
-bugs.newUsers,The number of new users every day.,Date,Users,Date,$__date,Users,$numberOfNewUsers
-bugs.emotions.cumulativeCommentPercentages,The cumulative percentages of comments containing each emotion,Date,Comments,Date,$__date,Emotion,$emotionLabel,Comments,$cumulativePercentage
-newsgroups.threads,"The number of threads per day, up to and including the current date.",Date,Threads,Date,$__date,Threads,$numberOfThreads
-bugs.severity.worksForMeBugs.percentages,The percentage of works-for-me bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfWorksForMeBugs
-bugs.severity.invalidBugs.percentages,The percentage of invalid bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfInvalidBugs
-designsmells.smells,"The number of design smells per day, up to and including the current date.",Date,DesignSmells,Date,$__date,DesignSmells,$cumulativeNumberOfDesignSmells
-bugs.severity.nonResolvedClosedBugs,The number of non-resolved or closed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfNonResolvedClosedBugs
-bugs.resolvedClosedBugs,The number of resolved or closed bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfResolvedClosedBugs
-designsmells.unstructuredSmells,"The number of Unstructured Module smells per day, up to and including the current date.",Date,UnstructuredModuleSmells,Date,$__date,Smells,$numberOfUnstructuredSmells
-newsgroups.cumulativerequests,The number of requests submitted up to and including the current date.,Date,Requests,Date,$__date,Requests,$cumulativeNumberOfRequests
-bugs.severity.invalidBugs,The number of invalid bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfInvalidBugs
-bugs.worksForMeBugs,The number of works-for-me bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfWorksForMeBugs
-bugs.severity.wontFixBugs,The number of won't-fix bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfWontFixBugs
-bugs.unansweredBugs,"The number of unanswered bugs per day, up to and including the current date.",Date,Bugs,Date,$__date,Bugs,$numberOfUnansweredBugs
-newsgroups.emotions.cumulativeArticles,The cumulative number of articles containing each emotion,Date,Articles,Date,$__date,Emotion,$emotionLabel,Articles,$cumulativeNumberOfArticles
-ratioOptionalMavenDependenciesTimeLine,This metric shows the ratio of optional dependencies over the total number of dependencies.,Date,Ratio,Date,$__date,Ratio,$value
-designsmells.insufficientSmells,"The number of Insufficient Modularization smells per day, up to and including the current date.",Date,InsufficientModularizationSmells,Date,$__date,Smells,$numberOfInsufficientSmells
-spreadOfStyleViolationsTimeLine,"This metric shows the spread of style violations over the project's files, over time.",Date,Spread,Date,$__date,Spread,$value
-CBOJavaQuartilesHistoric,This metric shows the quartiles of Coupling between objects for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-bugs.newbugs,The number of bugs submitted every day.,Date,Bugs,Date,$__date,Bugs,$numberOfBugs
-bugs.duplicateBugs,The number of duplicate bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfDuplicateBugs
-newsgroups.sentimentAtThreadBeggining,The average sentiment at the beginning of threads per newsgroup up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallSentimentAtThreadBeggining
-fileReadabilityQuartilesHistoric,"This metric shows the quartiles of code readability per file, measured by use of whitespace, over time.",Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
-newsgroups.severity.sentimentAtThreadEnd,The average sentiment at the end of threads per newsgroup per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$sentimentAtThreadEnd
+id,name,description,x,y,name,field,name,field,name,field,name,field
+bugs.cumulativeNewUsers,New Users (Cumulative),The number of new users up to and including the current date.,Date,Users,Date,$__date,Users,$cumulativeNumberOfNewUsers
+coreCommittersChurnBar,Core committers,This metric shows the total accumulated churn per committer.,Committer,Churn,Committer,$value[0].value,Churn,$value[1].value
+CeJavaQuartilesHistoric,Efferent coupling (Java),This metric shows the quartiles of Efferent coupling for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+bugs.cumulativePatches,Patches (Cumulative),The number of patches submitted up to and including the current date.,Date,Patches,Date,$__date,Patches,$cumulativeNumberOfPatches
+MPCJavaQuartilesHistoric,Message Passing Coupling (Java),This metric shows the quartiles of Message passing coupling for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+newsgroups.cumulativeNewUsers,New Users (Cumulative),The number of new users up to and including the current date.,Date,Users,Date,$__date,Users,$cumulativeNumberOfNewUsers
+AHFJavaHistoric,Attribute Hiding Factor (Java),This metric shows the Attribute Hiding Factor for Java over time.,Date,Val,Date,$__date,Val,$value
+bugs.severity.duplicateBugs.percentages,Duplicate Bug Severity (Percentages),The percentage of duplicate bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfDuplicateBugs
+bugs.severity.sentimentAtThreadBeggining,Thread Beginning Sentiment per Bug Severity,The average sentiment at the beginning of threads per bug repository per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$sentimentAtThreadBeggining
+bugs.severity.fixedBugs,Fixed Bug Severity,The number of fixed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfFixedBugs
+bugs.severity.duplicateBugs,Duplicate Bug Severity,The number of duplicate bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfDuplicateBugs
+designsmells.tightSmells,Tightly-coupled Module Smells,"The number of Tightly-coupled Module smells per day, up to and including the current date.",Date,Tightly-coupledModuleSmells,Date,$__date,Smells,$numberOfTightSmells
+CCHistogramJavaTimeLine,Number of Java methods per Cyclomatic Complexity risk factor,This metric shows the number of Java methods per CC risk factor over time.,Date,Count,Date,$__date,Factor,$value[0].value,Count,$value[1].value
+locPerLanguageTimeLine,Lines of code (per language),This metric shows the physical lines of code per language over time.,Date,LOC,Date,$__date,Language,$value[0].value,LOC,$value[1].value
+bugs.requests-averageperday,Requests Per Day,"The average number of requests per day, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerDay
+newsgroups.emotions.articlePercentages,Article Emotion Percentages,The percentages of articles containing each emotion,Date,Articles,Date,$__date,Emotion,$emotionLabel,Articles,$percentage
+bugs.cumulativereplies,Replies (Cumulative),The number of replies submitted up to and including the current date.,Date,Replies,Date,$__date,Replies,$cumulativeNumberOfReplies
+newsgroups.articles-threadaverage,Articles Per Thread,"The average number of articles per thread, up to and including the current date.",Date,Articles,Date,$__date,Articles,$averageArticlesPerThread
+designsmells.imperativeSmells,Imperative Abstraction Smells,"The number of Imperative Abstraction smells per day, up to and including the current date.",Date,ImperativeAbstractionSmells,Date,$__date,Smells,$numberOfImperativeSmells
+bugs.cumulativeNewBugs,Bugs (Cumulative),The number of bugs submitted up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$cumulativeNumberOfBugs
+bugs.replies,Replies,The number of replies submitted every day.,Date,Replies,Date,$__date,Replies,$numberOfReplies
+MIFJavaQuartilesHistoric,Method Inheritance Factor (Java),This metric shows the quartiles of Method inheritance factor for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+newsgroups.cumulativereplies,Replies (Cumulative),The number of replies submitted up to and including the current date.,Date,Replies,Date,$__date,Replies,$cumulativeNumberOfReplies
+AJavaHistoric,Abstractness (Java),This metric shows the Abstractness for Java over time.,Date,Val,Date,$__date,Val,$value
+bugs.requestsreplies-useraverage,"Comments, Requests and Replies Per User","The average number of comments, requests and replies per user, up to and including the current date.",Date,"['Comments', 'Requests', 'Replies']",Date,$__date,Comments,$averageCommentsPerUser,Requests,$averageRequestsPerUser,Replies,$averageRepliesPerUser
+bugs.severity.sentimentAtThreadEnd,Thread End per Bug Severity,The average sentiment at the end of threads per bug repository per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$sentimentAtThreadEnd
+newsgroups.averageResponseTime,Average Response Time (ms),The average response time of threads addressed every day.,Date,Response Time,Date,$__date,Response Time,$avgResponseTime
+filesWithErrorPronenessTimeLine,Percentage of file that are error prone,"This metric shows the percentage of files with style violations which make the code error prone, over time.",Date,Percentage,Date,$__date,Percentage,$value
+designsmells.missingDepSmells,Missing Dependency Smells,"The number of Missing Dependency smells per day, up to and including the current date.",Date,MissingDependencySmells,Date,$__date,Smells,$numberOfMissingDepSmells
+testCoverageHistoric,Unit test coverage (all methods),"This metric shows the history of the Java unit test coverage, estimated statically.",Date,Coverage,Date,$__date,Coverage,$value
+bugs.requestsreplies-bugaverage,"Comments, Requests and Replies Per Bug","The average number of comments, requests and replies per bug, up to and including the current date.",Date,"['Comments', 'Requests', 'Replies']",Date,$__date,Comments,$averageCommentsPerBug,Requests,$averageRequestsPerBug,Replies,$averageRepliesPerBug
+newsgroups.cumulativeAverageResponseTime,Average Response Time (Cumulative) (ms),The average response time of threads addressed up to and including the current date.,Date,Response Time,Date,$__date,Response Time,$cumulativeAvgResponseTime
+newsgroups.replies-threadaverage,Replies Per Thread,"The average number of replies per thread, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerThread
+bugs.averageSentiment,Average Sentiment,The average sentiment per bug repository up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallAverageSentiment
+NOMJavaQuartilesHistoric,Number of methods (Java),This metric shows the quartiles of Number of methods for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+bugs.averageResponseTime,Average Response Time (ms),The average response time of bugs addressed every day.,Date,Response Time,Date,$__date,Response Time,$avgResponseTime
+PFJavaHistoric,Polymorphism Factor (Java),This metric shows the Polymorphism Factor for Java over time.,Date,Val,Date,$__date,Val,$value
+bugs.replies-averageperday,Replies Per Day,"The average number of replies per day, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerDay
+newsgroups.averageSentiment,Average Sentiment,The average sentiment per newsgroup up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallAverageSentiment
+newsgroups.requests-useraverage,Requests Per User,"The average number of requests per user, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerUser
+bugs.requests-bugaverage,Requests Per Bug,"The average number of requests per bug, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerBug
+commitsovertimeline,commits,This metric shows a cumulative count of the commits.,Date,Commits,Date,$__date,Commits,$numberOfCommits,Repository,$url
+newsgroups.requestsreplies-averageperday,"Articles, Requests and Replies Per Day","The average number of comments, requests and replies per day, up to and including the current date.",Date,"['Articles', 'Requests', 'Replies']",Date,$__date,Articles,$averageArticlesPerDay,Requests,$averageRequestsPerDay,Replies,$averageRepliesPerDay
+newsgroups.sentimentAtThreadEnd,Average Sentiment At the End of Threads,The average sentiment at the end of threads per newsgroup up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallSentimentAtThreadEnd
+NOCJavaQuartilesHistoric,Number of Children (Java),This metric shows the quartiles of Number of children for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+bugs.comments,Comments,The number of comments submitted every day.,Date,Comments,Date,$__date,Comments,$numberOfComments
+bugs.averageResponseTime-bugs,Average Response Time per Thread (ms),"The average response time of bugs addressed every day, in relation to the number of bugs considered.",Threads,Response Time,Threads,$bugsConsidered,Response Time,$avgResponseTime
+bugs.comments-averageperday,Comments Per Day,"The average number of comments per day, up to and including the current date.",Date,Comments,Date,$__date,Comments,$averageCommentsPerDay
+bugs.bugs,Bugs,"The number of bugs per day, up to and including the current date.",Date,Bugs,Date,$__date,Bugs,$numberOfBugs
+designsmells.deficientSmells,Deficient Encapsulation Smells,"The number of Deficient Encapsulation smells per day, up to and including the current date.",Date,DeficientEncapsulationSmells,Date,$__date,Smells,$numberOfDeficientSmells
+newsgroups.replies-useraverage,Replies Per User,"The average number of replies per user, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerUser
+bugs.emotions.cumulativeComments,Comment Emotions (Cumulative),The cumulative number of comments containing each emotion,Date,Comments,Date,$__date,Emotion,$emotionLabel,Comments,$cumulativeNumberOfComments
+designsmells.weakenSmells,Weaken Modularity Smells,"The number of Weaken Modularity smells per day, up to and including the current date.",Date,WeakenModularitySmells,Date,$__date,Smells,$numberOfWeakenSmells
+LOCoverfilesovertime,LOC over files over time,This metric shows the distribution of physical lines of code over files over time.,Date,Gini,Date,$__date,Gini,$value
+newsgroups.replies,Replies,The number of replies submitted every day.,Date,Replies,Date,$__date,Replies,$numberOfReplies
+newsgroups.cumulativeArticles,Articles (Cumulative),The number of articles submitted up to and including the current date.,Date,Articles,Date,$__date,Articles,$cumulativeNumberOfArticles
+newsgroups.requestsreplies-useraverage,"Articles, Requests and Replies Per User","The average number of articles, requests and replies per user, up to and including the current date.",Date,"['Articles', 'Requests', 'Replies']",Date,$__date,Articles,$averageArticlesPerUser,Requests,$averageRequestsPerUser,Replies,$averageRepliesPerUser
+bugs.severity,Bug Severity,The number of bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfBugs
+bugs.bugOpenTime,Bug Open Time,The average time between creating and closing bugs.,Date,Bug Open Time,Date,$__date,Bug Open Time,$avgBugOpenTimeInDays
+bugs.wontFixBugs,Won't-Fix Bugs,The number of won't-fix bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfWontFixBugs
+newsgroups.comments-averageperday,Articles Per Day,"The average number of comments per day, up to and including the current date.",Date,Articles,Date,$__date,Articles,$averageArticlesPerDay
+TCCJavaQuartilesHistoric,Tight Class Cohesion (Java),This metric shows the quartiles of Tight class cohesion for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+bugs.severity.percentages,Bug Severity (Percentages),The percentage of bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentage
+bugs.users,Users,"The number of users per day, up to and including the current date.",Date,Users,Date,$__date,Users,$numberOfUsers
+AdvancedLanguageFeaturesJavaQuartilesHistoric,Advanced usage of Java features,This metric shows the quartiles of counts of advanced Java features over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+designsmells.multifacetedSmells,Multifaceted Abstraction Smells,"The number of Multifaceted Abstraction smells per day, up to and including the current date.",Date,MultifacetedAbstractionSmells,Date,$__date,Smells,$numberOfMultifacetedSmells
+newsgroups.cumulativerequestsreplies,Requests and Replies (Cumulative),The number of requests and replies submitted up to and including the current date.,Date,"['Requests', 'Replies']",Date,$__date,Requests,$cumulativeNumberOfRequests,Replies,$cumulativeNumberOfReplies
+newsgroups.severity.averageSentiment,Average Sentiment per Newsgroup Severity,The average sentiment per bug newsgroup per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$averageSentiment
+newsgroups.cumulativeNewThreads,New Threads (Cumulative),The number of new threads submitted up to and including the current date.,Date,Threads,Date,$__date,Threads,$cumulativeNumberOfNewThreads
+bugs.replies-useraverage,Replies Per User,"The average number of replies per user, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerUser
+newsgroups.requests,Requests,The number of requests submitted every day.,Date,Requests,Date,$__date,Requests,$numberOfRequests
+designsmells.brokenSmells,Broken Hierarchy Smells,"The number of Broken Hierarchy smells per day, up to and including the current date.",Date,BrokenHierarchySmells,Date,$__date,Smells,$numberOfBrokenSmells
+RRJavaHistoric,Reuse Ratio (Java),This metric shows the Reuse Ratio for Java over time.,Date,Val,Date,$__date,Val,$value
+bugs.cumulativeComments,Comments (Cumulative),The number of comments submitted up to and including the current date.,Date,Comments,Date,$__date,Comments,$cumulativeNumberOfComments
+bugs.requests,Requests,The number of requests submitted every day.,Date,Requests,Date,$__date,Requests,$numberOfRequests
+bugs.severity.nonResolvedClosedBugs.percentages,Non-Resolved or Closed Bug Severity (Percentages),The percentage of non-resolved or closed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfNonResolvedClosedBugs
+newsgroups.severity,Newsgroup Severity,The number of newsgroup threads per severity level,Date,Threads,Date,$__date,Severity,$severityLevel,Threads,$numberOfThreads
+newsgroups.severity.percentages,Newsgroup Severity (Percentages),The percentage of newsgroup threads per severity level,Date,Threads,Date,$__date,Severity,$severityLevel,Threads,$percentage
+NOAJavaQuartilesHistoric,Number of Attributes (Java),This metric shows the quartiles of Number of attributes for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+newsgroups.averageResponseTime-threads,Average Response Time per Thread (ms),"The average response time of threads addressed every day, in relation to the number of threads considered.",Threads,Response Time,Threads,$threadsConsidered,Response Time,$avgResponseTime
+testCoveragePublicHistoric,Unit test coverage (public methods),"This metric shows the percentage of public Java methods covered by unit tests, over time.",Date,Coverage,Date,$__date,Coverage,$value
+numTestsHistoric,Number of test methods,This metric shows the number of JUnit test methods over time.,Date,Count,Date,$__date,Count,$value
+designsmells.hairballSmells,Hairball Structure Smells,"The number of Hairball Structure smells per day, up to and including the current date.",Date,HairballStructureSmells,Date,$__date,Smells,$numberOfHairballSmells
+bugs.invalidBugs,Invalid Bugs,The number of invalid bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfInvalidBugs
+bugs.cumulativeAverageResponseTime-bugs, Average Response Time per Thread (Cumulative) (ms),"The average response time of bugs addressed up to and including the current date, in relation to the number of bugs considered.",Threads,Response Time,Threads,$cumulativeBugsConsidered,Response Time,$cumulativeAvgResponseTime
+bugs.severity.fixedBugs.percentages,Fixed Bug Severity (Percentages),The percentage of fixed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfFixedBugs
+newsgroups.activeusers,Active Users,"The number of active users per day, up to and including the current date.",Date,ActiveUsers,Date,$__date,ActiveUsers,$numberOfActiveUsers
+newsgroups.users,Users,"The number of users per day, up to and including the current date.",Date,Users,Date,$__date,Users,$numberOfUsers
+bugs.inactiveusers,Inactive Users,"The number of inactive users per day, up to and including the current date.",Date,InactiveUsers,Date,$__date,InactiveUsers,$numberOfInactiveUsers
+bugs.activeusers,Active Users,"The number of active users per day, up to and including the current date.",Date,ActiveUsers,Date,$__date,ActiveUsers,$numberOfActiveUsers
+newsgroups.articles,Articles,The number of articles submitted every day.,Date,Articles,Date,$__date,Articles,$numberOfArticles
+newsgroups.sentiment,"Average Sentiment: Overall, at Thread Beginning and at Thread End.",The average sentiment per newsgroup up to and including the processing date.,Date,"['Average Sentiment', 'Average Sentiment at Thread Beginning', 'Average Sentiment at Thread End']",Date,$__date,Average Sentiment,$overallAverageSentiment,Average Sentiment at Thread Beginning,$overallSentimentAtThreadBeggining,Average Sentiment at Thread End,$overallSentimentAtThreadEnd
+filesWithStyleViolationsTimeLine,Percentage of files that do not follow coding standards,This metric shows the percentage of files with style violations over time.,Date,Percentage,Date,$__date,Percentage,$value
+DITJavaQuartilesHistoric,Depth of Inheritance Tree (Java),This metric shows the quartiles of Depth of inheritance tree for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+AIFJavaQuartilesHistoric,Attribute Inheritance Factor (Java),This metric shows the quartiles of Attribute inheritance factor for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+bugs.comments-useraverage,Comments Per User,"The average number of comments per user, up to and including the current date.",Date,Comments,Date,$__date,Comments,$averageCommentsPerUser
+bugs.requestsreplies-averageperday,"Comments, Requests and Replies Per Day","The average number of comments, requests and replies per day, up to and including the current date.",Date,"['Comments', 'Requests', 'Replies']",Date,$__date,Comments,$averageCommentsPerDay,Requests,$averageRequestsPerDay,Replies,$averageRepliesPerDay
+bugs.cumulativeAverageResponseTime,Average Response Time (Cumulative) (ms),The average response time of bugs addressed up to and including the current date.,Date,Response Time,Date,$__date,Response Time,$cumulativeAvgResponseTime
+designsmells.unnecessarySmells,Unnecessary Abstraction Smells,"The number of Unnecessary Abstraction smells per day, up to and including the current date.",Date,UnnecessaryAbstractionSmells,Date,$__date,Smells,$numberOfUnnecessarySmells
+ratioUnusedOSGiImportedPackages,Ratio of unused OSGi Import-Package,This metric shows the ratio of OSGi Import-Package that are not actually used in the code.,Date,Ratio,Date,$__date,Ratio,$value
+spreadOfErrorPronenessTimeLine,Spread of error prone files over the system,"This metric shows the spread over the project's files of style violations which make the code error prone, over time.",Date,Spread,Date,$__date,Spread,$value
+bugs.replies-bugaverage,Replies Per Bug,"The average number of replies per bug, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerBug
+bugs.severity.averageSentiment,Average Sentiment per Bug Severity,The average sentiment per bug repository per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$averageSentiment
+newsgroups.severity.averageResponseTime,Newsgroup Thread Average Response Time (ms) per Severity Level,The number of newsgroup threads average response time per severity level,Date,Response Time,Date,$__date,Severity,$severityLevel,Response Time,$avgResponseTime
+commentedOutCodePerLanguageTimeLine,Lines of code commented out (per language),"This metric shows the number of lines with commented out code per language, over time.",Date,LOC,Date,$__date,Language,$value[0].value,LOC,$value[1].value
+bugs.severity.resolvedClosedBugs,Resolved or Closed Bug Severity,The number of resolved or closed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfResolvedClosedBugs
+churnPerCommitterTimeLine,Churn (per committer),This metric shows the churn per committer over time.,Date,Churn,Date,$__date,Committer,$value[0].value,Churn,$value[1].value
+filesWithUnderstandabilityIssuesTimeLine,Percentage of files that pose understandability issues,"This metric shows the percentage of files with style violations which indicate understandability issues, over time.",Date,Percentage,Date,$__date,Percentage,$value
+bugs.bugOpenTime-bugs,Bug Open Time in relation to the Number of Bugs,The average time between creating and closing bugs in relation to the number of bugs considered.,Bugs,Bug Open Time,Bugs,$bugsConsidered,Bug Open Time,$avgBugOpenTimeInDays
+bugs.requests-useraverage,Requests Per User,"The average number of requests per user, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerUser
+bugs.nonResolvedClosedBugs,Non-Resolved or Closed Bugs,The number of non-resolved or open bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfNonResolvedClosedBugs
+bugs.patches,Patches,The number of patches submitted every day.,Date,Patches,Date,$__date,Patches,$numberOfPatches
+bugs.sentiment,"Average Sentiment: Overall, at Thread Beginning and at Thread End.",The average sentiment per bug repository up to and including the processing date.,Date,"['Average Sentiment', 'Average Sentiment at Thread Beginning', 'Average Sentiment at Thread End']",Date,$__date,Average Sentiment,$overallAverageSentiment,Average Sentiment at Thread Beginning,$overallSentimentAtThreadBeggining,Average Sentiment at Thread End,$overallSentimentAtThreadEnd
+commitsPerDayTimeLine,Number of commits (per day),This metric shows the number of commits per day over time.,Date,Commits,Date,$__date,Commits,$value
+LCCJavaQuartilesHistoric,Loose Class Cohesion (Java),This metric shows the quartiles of Loose class cohesion for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+bugs.cumulativerequestsreplies,Requests and Replies (Cumulative),The number of requests and replies submitted up to and including the current date.,Date,"['Requests', 'Replies']",Date,$__date,Requests,$cumulativeNumberOfRequests,Replies,$cumulativeNumberOfReplies
+newsgroups.requestsreplies,Requests and Replies,The number of requests and replies submitted every day.,Date,"['Requests', 'Replies']",Date,$__date,Requests,$numberOfRequests,Replies,$numberOfReplies
+newsgroups.articles-useraverage,Articles Per User,"The average number of articles per user, up to and including the current date.",Date,Articles,Date,$__date,Articles,$averageArticlesPerUser
+newsgroups.cumulativeAverageResponseTime-threads, Average Response Time per Thread (Cumulative) (ms),"The average response time of threads addressed up to and including the current date, in relation to the number of threads considered.",Threads,Response Time,Threads,$threadsConsidered,Response Time,$cumulativeAvgResponseTime
+LCOM4JavaQuartilesHistoric,Lack of Cohesion in Methods (variant 4) (Java),This metric shows the quartiles of Lack of cohesion in methods 4 for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+newsgroups.emotions.articles,Article Emotions,The number of articles containing each emotion,Date,Articles,Date,$__date,Emotion,$emotionLabel,Articles,$numberOfArticles
+bugs.severity.resolvedClosedBugs.percentages,Resolved or Closed Bug Severity (Percentages),The percentage of resolved or closed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfResolvedClosedBugs
+bugs.activeinactiveusers,"Users, Active Users and Inactive Users","The number of users, active users and inactive users per day, up to and including the current date.",Date,"['Users', 'ActiveUsers', 'InactiveUsers']",Date,$__date,Users,$numberOfUsers,ActiveUsers,$numberOfActiveUsers,InactiveUsers,$numberOfInactiveUsers
+filesWithInefficienciesTimeLine,Percentage of files that have inefficient code,"This metric shows the percentage of files with style violations which indicate inefficiencies, over time.",Date,Percentage,Date,$__date,Percentage,$value
+bugs.requestsreplies,Requests and Replies,The number of requests and replies submitted every day.,Date,"['Requests', 'Replies']",Date,$__date,Requests,$numberOfRequests,Replies,$numberOfReplies
+newsgroups.replies-averageperday,Replies Per Day,"The average number of replies per day, up to and including the current date.",Date,Replies,Date,$__date,Replies,$averageRepliesPerDay
+bugs.comments-bugaverage,Comments Per Bug,"The average number of comments per bug, up to and including the current date.",Date,Comments,Date,$__date,Comments,$averageCommentsPerBug
+newsgroups.requestsreplies-threadaverage,"Articles, Requests and Replies Per Thread","The average number of articles, requests and replies per thread, up to and including the current date.",Date,"['Articles', 'Requests', 'Replies']",Date,$__date,Articles,$averageArticlesPerThread,Requests,$averageRequestsPerThread,Replies,$averageRepliesPerThread
+DACJavaQuartilesHistoric,Data Abstraction Coupling (Java),This metric shows the quartiles of Data abstraction coupling for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+newsgroups.requests-threadaverage,Requests Per Thread,"The average number of requests per thread, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerThread
+newsgroups.unansweredThreads,Unanswered Threads,"The number of unanswered threads per day, up to and including the current date.",Date,Threads,Date,$__date,Threads,$numberOfUnansweredThreads
+churnPerCommitInTwoWeeksTimeLine,Churn per commit (2 weeks),This metric shows the average churn per commit in two weeks over time.,Date,Churn,Date,$__date,Churn,$value
+CaJavaQuartilesHistoric,Afferent Coupling (Java),This metric shows the quartiles of Afferent coupling for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+cloneLOCPerLanguageTimeLine,Lines of code in Type I clones (per language),"This metric shows the number of lines in Type I clones larger than 6 lines, per language, over time.",Date,LOC,Date,$__date,Language,$value[0].value,LOC,$value[1].value
+newsgroups.requests-averageperday,Requests Per Day,"The average number of requests per day, up to and including the current date.",Date,Requests,Date,$__date,Requests,$averageRequestsPerDay
+designsmells.missAbSmells,Missing Abstraction Smells,"The number of Missing Abstraction smells per day, up to and including the current date.",Date,MissingAbstractionSmells,Date,$__date,Smells,$numberOfMissAbSmells
+newsgroups.emotions.cumulativeArticlePercentages,Article Emotion Percentages (Cumulative),The cumulative percentages of articles containing each emotion,Date,Articles,Date,$__date,Emotion,$emotionLabel,Articles,$cumulativePercentage
+newsgroups.newUsers,New Users,The number of new users every day.,Date,Users,Date,$__date,Users,$numberOfNewUsers
+RFCJavaQuartilesHistoric,Response For Class (Java),This metric shows the quartiles of Response for class for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+bugs.severity.sentiment,"Average Sentiment: Overall, at Thread Beginning and at Thread End.",Sentiment per bug repository per severity level.,Date,"['Average Sentiment', 'Average Sentiment at Thread Beginning', 'Average Sentiment at Thread End']",Date,$__date,Average Sentiment,$averageSentiment,Average Sentiment at Thread Beginning,$sentimentAtThreadBeggining,Average Sentiment at Thread End,$sentimentAtThreadEnd
+spreadOfUnderstandabilityIssuesTimeLine,Spread of files with understandability issues over the system,"This metric shows the spread over the project's files of style violations which indicate understandability issues, over time.",Date,Spread,Date,$__date,Spread,$value
+newsgroups.severity.sentiment,"Average Sentiment: Overall, at Thread Beginning and at Thread End.",Sentiment per newsgroup per severity level.,Date,"['Average Sentiment', 'Average Sentiment at Thread Beginning', 'Average Sentiment at Thread End']",Date,$__date,Average Sentiment,$averageSentiment,Average Sentiment at Thread Beginning,$sentimentAtThreadBeggining,Average Sentiment at Thread End,$sentimentAtThreadEnd
+bugs.severity.averageResponseTime,Bug Average Response Time (ms) per Severity Level,The number of bug average response time per severity level,Date,Response Time,Date,$__date,Severity,$severityLevel,Response Time,$avgResponseTime
+bugs.sentimentAtThreadBeggining,Average Sentiment At Thread Beginning,The average sentiment at the beginning of threads per bug repository up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallSentimentAtThreadBeggining
+bugs.emotions.commentPercentages,Comment Emotion Percentages,The percentages of comments containing each emotion,Date,Comments,Date,$__date,Emotion,$emotionLabel,Comments,$percentage
+LCOMJavaQuartilesHistoric,Lack of Cohesion in Methods (Java),This metric shows the quartiles of Lack of cohesion in methods for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+headerPercentageTimeLine,Percentage of files with headers,This metric shows the percentage of files with a header over time.,Date,Percentage,Date,$__date,Percentage,$value
+bugs.fixedBugs,Fixed Bugs,The number of fixed bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfFixedBugs
+newsgroups.severity.sentimentAtThreadBeggining,Thread Beginning Sentiment per Newsgroup Severity,The average sentiment at the beginning of threads per bug newsgroup per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$sentimentAtThreadBeggining
+bugs.cumulativerequests,Requests (Cumulative),The number of requests submitted up to and including the current date.,Date,Requests,Date,$__date,Requests,$cumulativeNumberOfRequests
+IJavaQuartilesHistoric,Instability (Java),This metric shows the quartiles of Instability for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+bugs.severity.wontFixBugs.percentages,Won't-Fix Bug Severity (Percentages),The percentage of won't-fix bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfWontFixBugs
+spreadOfInefficienciesTimeLine,Spread of files with inefficiencies over the system,"This metric shows the spread over the project's files of style violations which indicate inefficiencies, over time.",Date,Spread,Date,$__date,Spread,$value
+newsgroups.newThreads,New Threads,The number of new threads submitted every day.,Date,Threads,Date,$__date,Threads,$numberOfNewThreads
+MHFJavaHistoric,Method Hiding Factor (Java),This metric shows the Method Hiding Factor for Java over time.,Date,Val,Date,$__date,Val,$value
+bugs.sentimentAtThreadEnd,Average Sentiment At Thread End,The average sentiment at the end of threads per bug repository up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallSentimentAtThreadEnd
+bugs.severity.worksForMeBugs,Works-For-Me Bug Severity,The number of works-for-me bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfWorksForMeBugs
+newsgroups.activeinactiveusers,"Users, Active Users and Inactive Users","The number of users, active users and inactive users per day, up to and including the current date.",Date,"['Users', 'ActiveUsers', 'InactiveUsers']",Date,$__date,Users,$numberOfUsers,ActiveUsers,$numberOfActiveUsers,InactiveUsers,$numberOfInactiveUsers
+bugs.emotions.comments,Comment Emotions,The number of comments containing each emotion,Date,Comments,Date,$__date,Emotion,$emotionLabel,Comments,$numberOfComments
+churnPerDayTimeLine,Churn (per day) ,This metric shows the churn per day over time.,Date,Churn,Date,$__date,Churn,$value
+commentLinesPerLanguageTimeLine,Lines of code in comments (per language),"This metric shows the number of comment lines per language, over time.",Date,LOC,Date,$__date,Language,$value[0].value,LOC,$value[1].value
+newsgroups.inactiveusers,Inactive Users,"The number of inactive users per day, up to and including the current date.",Date,InactiveUsers,Date,$__date,InactiveUsers,$numberOfInactiveUsers
+SRJavaHistoric,Specialization Ratio (Java),This metric shows the Specialization Ratio for Java over time.,Date,Val,Date,$__date,Val,$value
+CFJavaHistoric,Coupling Factor (Java),This metric shows the Coupling Factor for Java over time.,Date,Val,Date,$__date,Val,$value
+bugs.newUsers,New Users,The number of new users every day.,Date,Users,Date,$__date,Users,$numberOfNewUsers
+bugs.emotions.cumulativeCommentPercentages,Comment Emotion Percentages (Cumulative),The cumulative percentages of comments containing each emotion,Date,Comments,Date,$__date,Emotion,$emotionLabel,Comments,$cumulativePercentage
+newsgroups.threads,Threads,"The number of threads per day, up to and including the current date.",Date,Threads,Date,$__date,Threads,$numberOfThreads
+bugs.severity.worksForMeBugs.percentages,Works-For-Me Bug Severity (Percentages),The percentage of works-for-me bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfWorksForMeBugs
+bugs.severity.invalidBugs.percentages,Invalid Bug Severity (Percentages),The percentage of invalid bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$percentageOfInvalidBugs
+designsmells.smells,Sum of Design Smells,"The number of design smells per day, up to and including the current date.",Date,DesignSmells,Date,$__date,DesignSmells,$cumulativeNumberOfDesignSmells
+bugs.severity.nonResolvedClosedBugs,Non-Resolved or Closed Bug Severity,The number of non-resolved or closed bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfNonResolvedClosedBugs
+bugs.resolvedClosedBugs,Resolved or Closed Bugs,The number of resolved or closed bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfResolvedClosedBugs
+designsmells.unstructuredSmells,Unstructured Module Smells,"The number of Unstructured Module smells per day, up to and including the current date.",Date,UnstructuredModuleSmells,Date,$__date,Smells,$numberOfUnstructuredSmells
+newsgroups.cumulativerequests,Requests (Cumulative),The number of requests submitted up to and including the current date.,Date,Requests,Date,$__date,Requests,$cumulativeNumberOfRequests
+bugs.severity.invalidBugs,Invalid Bug Severity,The number of invalid bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfInvalidBugs
+bugs.worksForMeBugs,Works-For-Me Bugs,The number of works-for-me bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfWorksForMeBugs
+bugs.severity.wontFixBugs,Won't-Fix Bug Severity,The number of won't-fix bugs per severity level,Date,Bugs,Date,$__date,Severity,$severityLevel,Bugs,$numberOfWontFixBugs
+bugs.unansweredBugs,Unanswered Bugs,"The number of unanswered bugs per day, up to and including the current date.",Date,Bugs,Date,$__date,Bugs,$numberOfUnansweredBugs
+newsgroups.emotions.cumulativeArticles,Article Emotions (Cumulative),The cumulative number of articles containing each emotion,Date,Articles,Date,$__date,Emotion,$emotionLabel,Articles,$cumulativeNumberOfArticles
+ratioOptionalMavenDependenciesTimeLine,Ratio of optional Maven dependencies,This metric shows the ratio of optional dependencies over the total number of dependencies.,Date,Ratio,Date,$__date,Ratio,$value
+designsmells.insufficientSmells,Insufficient Modularization Smells,"The number of Insufficient Modularization smells per day, up to and including the current date.",Date,InsufficientModularizationSmells,Date,$__date,Smells,$numberOfInsufficientSmells
+spreadOfStyleViolationsTimeLine,Spread of files violating the coding standards over the system,"This metric shows the spread of style violations over the project's files, over time.",Date,Spread,Date,$__date,Spread,$value
+CBOJavaQuartilesHistoric,Coupling Between Objects (Java),This metric shows the quartiles of Coupling between objects for Java over time.,Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+bugs.newbugs,Bugs,The number of bugs submitted every day.,Date,Bugs,Date,$__date,Bugs,$numberOfBugs
+bugs.duplicateBugs,Duplicate Bugs,The number of duplicate bugs up to and including the current date.,Date,Bugs,Date,$__date,Bugs,$numberOfDuplicateBugs
+newsgroups.sentimentAtThreadBeggining,Average Sentiment At the Beginning of Threads,The average sentiment at the beginning of threads per newsgroup up to and including the processing date.,Date,Average Sentiment,Date,$__date,Average Sentiment,$overallSentimentAtThreadBeggining
+fileReadabilityQuartilesHistoric,Measure of readability (per file),"This metric shows the quartiles of code readability per file, measured by use of whitespace, over time.",Date,Val,Date,$__date,Q,$value[0].value,Val,$value[1].value
+newsgroups.severity.sentimentAtThreadEnd,Thread End per Newsgroup Severity,The average sentiment at the end of threads per newsgroup per severity level,Date,Average Sentiment,Date,$__date,Severity,$severityLevel,Average Sentiment,$sentimentAtThreadEnd

@@ -58,15 +58,17 @@ except requests.exceptions.HTTPError as e:
   #   "timeSeries": true
   # },
 
+# processing metrics
+
 try:
     r = requests.get(scavaApiGwUrl + '/administration/metrics', headers=headers)
     r.raise_for_status()
     metrics = []
     row = []
-    metrics.append(["id", "description", "x","y", "name", "field", "name", "field", "name", "field", "name", "field"])
+    metrics.append(["id", "name", "description", "x","y", "name", "field", "name", "field", "name", "field", "name", "field"])
 
     for m in r.json():
-        row = [m['id'], m['description']]
+        row = [m['id'], m['name'], m['description']]
         row.extend([m['x'],m['y']])
         for e in (m['datatable']['cols']):
             row.extend([e['name'],e['field']])
@@ -89,6 +91,10 @@ try:
     factoids.append(["id", "name", "summary", "dependencies"])
 
     for f in r.json():
+        # r = requests.get(scavaApiGwUrl + '/administration/projects/p/xwikiplatform/f/{}'.format(f['id']), headers=headers)
+        # r.raise_for_status()
+        # fval = r.
+
         row = [f['id'], f['name'], f['summary'], f['dependencies']]
         factoids.append(row)
 
