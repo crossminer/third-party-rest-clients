@@ -13,7 +13,8 @@ if not envVariables <= set(os.environ.keys()):
     print('missing environment variable(s). Expected vars: {}'.format(envVariables))
     sys.exit()
 
-projectsWhitelist = [ 'XWikiwJIRA' ]
+# projectsWhitelist = [ 'xwikiwj', 'TestAdrian' ]
+projectsWhitelist = ['xwiki']
 
 scavaApiGwUrl = os.getenv('SCAVA_APIGW_URL').strip('/')
 
@@ -57,41 +58,58 @@ try:
     r.raise_for_status()
     projectKeys = []
 
-    for m in r.json():
-        projectKeys.append(m['shortName'])
+except requests.exceptions.HTTPError as e:
+    print('error at retrieving projects : {}'.format(e))
 
+for m in r.json():
+    projectKeys.append(m['shortName'])
+
+try:
     r = requests.get(
         scavaApiGwUrl + '/administration/metrics', headers=headers)
     r.raise_for_status()
     metricIds = []
 
-    for m in r.json():
-        metricIds.append(m['id'])
+except requests.exceptions.HTTPError as e:
+    print('error at retrieving metrics list: {}'.format(e))
 
-    for projectKey in projectKeys:
-        if projectKey in projectsWhitelist:
-            print("## projectKey {}".format(projectKey))
-            hasValueCount = 0
-            metricIdsWValues = []
-            metricIdsWOValues = []
-            for metricId in metricIds:
+for m in r.json():
+    metricIds.append(m['id'])
+
+for projectKey in projectKeys:
+    if not projectsWhitelist or projectKey in projectsWhitelist:
+        print("## projectKey {}".format(projectKey))
+        hasValueCount = 0
+        rowsWOValue = []
+        rowsWValue = []
+        header = ['metricId', 'datatable']
+        for metricId in metricIds:
+            try:
                 r = requests.get(
                     scavaApiGwUrl + '/administration/projects/p/{}/m/{}'.format(projectKey, metricId), headers=headers)
                 r.raise_for_status()
 
-                r = r.json()
-                if len(r['datatable']) > 0:
-                    hasValueCount += 1
-                    metricIdsWValues.append(metricId)
-                else:
-                    metricIdsWOValues.append(metricId)
+            except requests.exceptions.HTTPError as e:
+                print('error at retrieving metric value : {}'.format(e))
+                continue
 
-            print("project has {} metrics with datatable values".format(hasValueCount))
-            print("metrics with datatable not empty: {}".format(metricIdsWValues))
-            print("metrics with empty datatable: {}".format(metricIdsWOValues))
+            r = r.json()
+            if len(r['datatable']) > 0:
+                hasValueCount += 1
+                rowsWValue.append([metricId ,str(r['datatable'])])
+            else:
+                rowsWOValue.append([metricId , 'empty datatable'])
 
-                # print("metricId => {}, datatable size => {}".format(metricId, len(r['datatable'])))
+        print("project has {} metrics with datatable values".format(hasValueCount))
+        # print(rowsWValue)
 
+        #
 
-except requests.exceptions.HTTPError as e:
-    print('error at retrieving metrics : {}'.format(e))
+        with open('metricsvalues/{}-metrics-values.csv'.format(projectKey), 'w', newline='') as file:
+            writer = csv.writer(file)
+            rowsWValue.sort()
+            rowsWOValue.sort()
+            writer.writerows(rowsWValue)
+            writer.writerows(rowsWOValue)
+        # print("metrics with datatable not empty: {}\n".format(metricIdsWValues))
+        # print("metrics with empty datatable: {}".format(metricIdsWOValues))
