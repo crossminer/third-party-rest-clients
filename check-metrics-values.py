@@ -14,11 +14,7 @@ if not envVariables <= set(os.environ.keys()):
     sys.exit()
 
 # projectsWhitelist = [ 'xwikiwj', 'TestAdrian' ]
-<<<<<<< HEAD
 projectsWhitelist = ['xwiki']
-=======
-projectsWhitelist = []
->>>>>>> e8995c7d6c12b9ad10d77b95a4f5916a5a9c0ac2
 
 scavaApiGwUrl = os.getenv('SCAVA_APIGW_URL').strip('/')
 
@@ -74,7 +70,6 @@ try:
     r.raise_for_status()
     metricIds = []
 
-<<<<<<< HEAD
 except requests.exceptions.HTTPError as e:
     print('error at retrieving metrics list: {}'.format(e))
 
@@ -90,18 +85,6 @@ for projectKey in projectKeys:
         header = ['metricId', 'datatable']
         for metricId in metricIds:
             try:
-=======
-    for m in r.json():
-        metricIds.append(m['id'])
-
-    for projectKey in projectKeys:
-        if not projectsWhitelist or projectKey in projectsWhitelist:
-            print("## projectKey {}".format(projectKey))
-            hasValueCount = 0
-            metricIdsWValues = []
-            metricIdsWOValues = []
-            for metricId in metricIds:
->>>>>>> e8995c7d6c12b9ad10d77b95a4f5916a5a9c0ac2
                 r = requests.get(
                     scavaApiGwUrl + '/administration/projects/p/{}/m/{}'.format(projectKey, metricId), headers=headers)
                 r.raise_for_status()
