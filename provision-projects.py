@@ -8,6 +8,7 @@ import os
 import json
 
 projectUrlsToRegister = []
+# ALL_PROVIDERS = False
 
 # projectUrlsToRegister = [
 #     'https://github.com/ow2-proactive/scheduling', # import
@@ -91,17 +92,36 @@ for prop in props:
     except requests.exceptions.HTTPError as e:
         print('error at getting properties : {}'.format(e))
 
+# retrieve all the metricproviders for later use when creating task
+
 try:
-    metricProvidersIds = []
+    allMetricProvidersIds = []
     r = requests.get(
         scavaApiGwUrl + '/administration/analysis/metricproviders', headers=headers)
     r.raise_for_status()
     for metricProvider in r.json():
         # print(metricProvider['metricProviderId'])
-        metricProvidersIds.append(metricProvider['metricProviderId'])
+        allMetricProvidersIds.append(metricProvider['metricProviderId'])
 
 except requests.exceptions.HTTPError as e:
     print('error at retrieving metricproviders : {}'.format(e))
+
+
+pScenarioMetricProvidersIds = ['org.eclipse.scava.metricprovider.historic.bugs.users.UsersHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.responsetime.ResponseTimeHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.sentiment.SentimentHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.opentime.OpenTimeHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.emotions.EmotionsHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.unansweredbugs.UnansweredThreadsHistoricMetricProvider',
+                               'rascal.generic.churn.commitsToday.historic',
+                               'trans.rascal.OO.java.DIT-Java-Quartiles.historic',
+                               'trans.rascal.OO.java.LCC-Java-Quartiles.historic',
+                               'trans.rascal.OO.java.LCOM4-Java-Quartiles.historic',
+                               'trans.rascal.LOC.genericLOCoverFiles.historic',
+                               'trans.rascal.OO.java.MHF-Java.historic',
+                               'trans.rascal.OO.java.PF-Java.historic',
+                               'trans.rascal.OO.java.TCC-Java-Quartiles.historic',
+                               'rascal.testability.java.TestCoverage.historic']
 
 
 def getProjects():
@@ -159,7 +179,8 @@ for p in projectsMeta:
                                   json=p['scavaMeta'], headers=headers)
                 r.raise_for_status()
             except requests.exceptions.HTTPError as e:
-                print('error at creating the project {} with message {}'.format(r.text, e))
+                print(
+                    'error at creating the project {} with message {}'.format(r.text, e))
         else:
             sys.exit()
 
@@ -181,15 +202,19 @@ for project in scavaRegisteredProjects:
         print("here")
         sys.exit()
 
-    print('will create task for: ' + project['shortName'])
-    json = {"analysisTaskId": project['shortName'] + ":task", "label": "task", "type": "SINGLE_EXECUTION",
-            "startDate": "01/01/2018", "endDate": "31/12/2018", "projectId": pShortName, "metricProviders": metricProvidersIds}
-    # print(json)
-    try:
-        r = requests.post(scavaApiGwUrl + '/administration/analysis/task/create',
-                          json=json,
-                          headers=headers)
-        r.raise_for_status()
-    except requests.exceptions.HTTPError as e:
-        print('error at creating task for the project {} with message {}'.format(
-            project['shortName'], e))
+    tasks = {'projectScenario': pScenarioMetricProvidersIds,
+             'userScenario': allMetricProvidersIds}
+    for task, metricProvidersIds in tasks.items():
+        print('will create task {} for project {}'.format(
+            task, project['shortName']))
+        json = {"analysisTaskId": project['shortName'] + ":" + task, "label": task, "type": "SINGLE_EXECUTION",
+                "startDate": "01/01/2018", "endDate": "31/12/2018", "projectId": pShortName, "metricProviders": metricProvidersIds}
+        # print(json)
+        try:
+            r = requests.post(scavaApiGwUrl + '/administration/analysis/task/create',
+                              json=json,
+                              headers=headers)
+            r.raise_for_status()
+        except requests.exceptions.HTTPError as e:
+            print('error at creating task for the project {} with message {}'.format(
+                project['shortName'], e))
