@@ -6,7 +6,7 @@ import sys
 import pprint
 import os
 import json
-from collections import Counter
+# from collections import Counter
 
 projectUrlsToRegister = []
 # ALL_PROVIDERS = False
