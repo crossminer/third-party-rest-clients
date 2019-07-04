@@ -9,22 +9,6 @@ import json
 # from collections import Counter
 
 projectUrlsToRegister = []
-# ALL_PROVIDERS = False
-
-# projectUrlsToRegister = [
-#     'https://github.com/ow2-proactive/scheduling', # import
-#     'https://github.com/docdoku/docdoku-plm', # import
-#     'https://gitlab.ow2.org/asm/asm', # import (sympa missing)
-#     'https://gitlab.ow2.org/clif/clif-legacy', # import (sympa missing)
-#     'https://gitlab.ow2.org/sat4j/sat4j', # import
-#     'https://github.com/bonitasoft/bonita-studio', # create
-#     'https://github.com/lutece-platform/lutece-core', # create
-#     'https://github.com/xwiki/xwiki-platform', # create
-#     'https://github.com/KnowageLabs/Knowage-Server', # create
-#     'https://github.com/INRIA/spoon', # import
-#     'https://github.com/bonitasoft/bonita-studio', # create
-#     'https://github.com/RocketChat/Rocket.Chat', # import
-# ]
 
 with open('provision-projects-list.json', 'r') as file:
     projectsMeta = json.load(file)

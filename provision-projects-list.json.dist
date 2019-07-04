@@ -1,0 +1,106 @@
+[
+	{
+		"method": "import",
+    "url": "https://github.com/ow2-proactive/scheduling"
+	},
+  {
+		"method": "import",
+    "url": "https://github.com/docdoku/docdoku-plm"
+	},
+  {
+		"method": "import",
+    "url": "https://gitlab.ow2.org/asm/asm"
+	},
+  {
+		"method": "import",
+    "url": "https://gitlab.ow2.org/clif/clif-legacy"
+	},
+  {
+		"method": "import",
+    "url": "https://gitlab.ow2.org/sat4j/sat4j"
+	},
+  {
+    "method": "create",
+    "scavaMeta": {
+      "name": "Bonita Studio",
+      "description": "Bonita Studio",
+      "homePage": "https://github.com/bonitasoft/bonita-studio",
+      "vcsRepositories": [
+        {
+          "type": "git",
+          "url": "https://github.com/bonitasoft/bonita-studio.git"
+        }
+      ],
+      "bts": [
+        {
+          "type": "jira",
+          "login": "myusername",
+          "password": "xxx",
+          "project": "BBPMC",
+          "url": "https://bonita.atlassian.net/"
+        }
+      ],
+      "communication_channels": []
+    }
+  },
+  {
+    "method": "create",
+    "scavaMeta": {
+      "name": "XWiki",
+      "description": "XWiki",
+      "homePage": "https://github.com/xwiki/xwiki-platform",
+      "vcsRepositories": [
+        {
+          "type": "git",
+          "url": "https://github.com/xwiki/xwiki-platform.git"
+        }
+      ],
+      "bts": [
+        {
+          "type": "jira",
+          "login": "myusername",
+          "password": "xxx",
+          "project": "XWIKI",
+          "url": "https://jira.xwiki.org/"
+        }
+      ],
+      "communication_channels": []
+    }
+  },
+  {
+    "method": "create",
+    "scavaMeta": {
+      "name": "Lutece",
+      "description": "Lutece",
+      "homePage": "https://github.com/lutece-platform/lutece-core",
+      "vcsRepositories": [
+        {
+          "type": "git",
+          "url": "https://github.com/lutece-platform/lutece-core.git"
+        }
+      ],
+      "bts": [
+        {
+          "type": "jira",
+          "login": "myusername",
+          "password": "xxx",
+          "project": "LUTECE",
+          "url": "http://dev.lutece.paris.fr/jira/"
+        }
+      ],
+      "communication_channels": []
+    }
+  },
+  {
+    "method": "import",
+    "url": "https://github.com/KnowageLabs/Knowage-Server"
+  },
+  {
+    "method": "import",
+    "url": "https://github.com/INRIA/spoon"
+  },
+  {
+    "method": "import",
+    "url": "https://github.com/RocketChat/Rocket.Chat"
+  }
+]
