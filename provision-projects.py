@@ -6,6 +6,7 @@ import sys
 import pprint
 import os
 import json
+from collections import Counter
 
 projectUrlsToRegister = []
 # ALL_PROVIDERS = False
@@ -39,7 +40,7 @@ for p in projectsMeta:
     else:
         continue
 
-print(projectUrlsToRegister)
+# print(projectUrlsToRegister)
 
 envVariables = {'SCAVA_ADMIN_USERNAME',
                 'SCAVA_ADMIN_PASSWORD', 'SCAVA_APIGW_URL', 'GITLAB_TOKEN', 'GITHUB_TOKEN'}
@@ -99,7 +100,8 @@ try:
     r = requests.get(
         scavaApiGwUrl + '/administration/analysis/metricproviders', headers=headers)
     r.raise_for_status()
-    for metricProvider in r.json():
+    providersData = r.json()
+    for metricProvider in providersData:
         # print(metricProvider['metricProviderId'])
         allMetricProvidersIds.append(metricProvider['metricProviderId'])
 
@@ -123,6 +125,35 @@ pScenarioMetricProvidersIds = ['org.eclipse.scava.metricprovider.historic.bugs.u
                                'trans.rascal.OO.java.TCC-Java-Quartiles.historic',
                                'rascal.testability.java.TestCoverage.historic']
 
+# adding providers dependencies for the providers
+
+def getDeps(providersData, providersList):
+    deps = []
+    for provider in providersData:
+        if provider['metricProviderId'] in providersList:
+            if len(provider['dependOf']):
+                for mp in provider['dependOf']:
+                    if mp not in deps:
+                        deps.append(mp['metricProviderId'])
+            else:
+                # no deps for this mp
+                continue
+    return deps
+
+deps = pScenarioMetricProvidersIds
+
+while len(deps):
+    # print("deps before: {}".format(deps))
+    deps = getDeps(providersData, deps)
+    # print("get deps : {}".format(deps))
+    pScenarioMetricProvidersIds.extend(deps)
+
+# removing duplicates
+pScenarioMetricProvidersIds = list(set(pScenarioMetricProvidersIds))
+
+# print("final deps : {} len {}".format(Counter(list(set(pScenarioMetricProvidersIds))),len(list(set(pScenarioMetricProvidersIds)))))
+
+# sys.exit()
 
 def getProjects():
     try:
@@ -204,6 +235,7 @@ for project in scavaRegisteredProjects:
 
     tasks = {'projectScenario': pScenarioMetricProvidersIds,
              'userScenario': allMetricProvidersIds}
+    print(pScenarioMetricProvidersIds)
     for task, metricProvidersIds in tasks.items():
         print('will create task {} for project {}'.format(
             task, project['shortName']))
