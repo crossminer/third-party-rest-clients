@@ -14,3 +14,22 @@ The script reads a file `provision-projects-list.json` which contains the list o
 Notice: WIP. There are still hardcoded value in there:
 - the task start/end date
 - the script creates two tasks, one with all metrics enabled, the other with a specific list of metrics
+
+## scava_stats.py
+
+The script generates a list of stats (i.e., min, max, avg, sum, median, last) for a set of
+metrics per project, and save the data obtained to an CSV file. Optionally, the stats can be
+calculated in a time range (the default time range is 1970-01-01, 2100-01-01.
+
+The script can be launched as follows:
+```
+    scava_stats
+        -u https://admin:admin@localhost:9200
+        -i scava-metrics
+        -m bugs.inactiveusers bugs.activeusers
+        -o /tmp/test.csv
+        --from-date 1970-01-01
+        --to-date 2010-01-01
+```
+
+The script requires elasticsearch==6.3.1
