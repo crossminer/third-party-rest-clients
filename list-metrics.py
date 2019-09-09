@@ -65,10 +65,10 @@ try:
     r.raise_for_status()
     metrics = []
     row = []
-    metrics.append(["id", "name", "description", "x","y", "name", "field", "name", "field", "name", "field", "name", "field"])
+    metrics.append(["id", "providerid", "name", "description", "x","y", "name", "field", "name", "field", "name", "field", "name", "field"])
 
     for m in r.json():
-        row = [m['id'], m['name'], m['description']]
+        row = [m['id'], m['metricId'], m['name'], m['description']]
         row.extend([m['x'],m['y']])
         for e in (m['datatable']['cols']):
             row.extend([e['name'],e['field']])

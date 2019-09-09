@@ -106,8 +106,30 @@ pScenarioMetricProvidersIds = ['org.eclipse.scava.metricprovider.historic.bugs.u
                                'trans.rascal.LOC.genericLOCoverFiles.historic',
                                'trans.rascal.OO.java.MHF-Java.historic',
                                'trans.rascal.OO.java.PF-Java.historic',
-                               'trans.rascal.OO.java.TCC-Java-Quartiles.historic',
+                               #'trans.rascal.OO.java.TCC-Java-Quartiles.historic',
                                'rascal.testability.java.TestCoverage.historic']
+
+uScenarioMetricProvidersIds = ['org.eclipse.scava.metricprovider.indexing.commits.CommitsIndexingMetricProvider',
+                               'org.eclipse.scava.metricprovider.indexing.bugs.BugsIndexingMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.bugs.BugsHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.comments.CommentsHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.requestsreplies.average.RequestsRepliesHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.newbugs.NewBugsHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.newusers.NewUsersHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.patches.PatchesHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.requestsreplies.RequestsRepliesHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.status.StatusHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.severity.SeverityHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.severityresponsetime.SeverityResponseTimeHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.severitysentiment.SeveritySentimentHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.severitybugstatus.SeverityBugStatusHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.topics.TopicsHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.unansweredbugs.UnansweredThreadsHistoricMetricProvider',
+                               'org.eclipse.scava.metricprovider.historic.bugs.users.UsersHistoricMetricProvider',
+                               'rascal.generic.churn.churnPerCommitInTwoWeeks.historic',
+                               'rascal.generic.churn.churnPerCommitter.historic',
+                               'rascal.generic.churn.churnToday.historic']
+
 
 # adding providers dependencies for the providers
 
@@ -124,6 +146,7 @@ def getDeps(providersData, providersList):
                 continue
     return deps
 
+
 deps = pScenarioMetricProvidersIds
 
 while len(deps):
@@ -134,6 +157,18 @@ while len(deps):
 
 # removing duplicates
 pScenarioMetricProvidersIds = list(set(pScenarioMetricProvidersIds))
+
+# same thing with user scenario providers
+deps = uScenarioMetricProvidersIds
+
+while len(deps):
+    # print("deps before: {}".format(deps))
+    deps = getDeps(providersData, deps)
+    # print("get deps : {}".format(deps))
+    uScenarioMetricProvidersIds.extend(deps)
+
+# removing duplicates
+uScenarioMetricProvidersIds = list(set(uScenarioMetricProvidersIds))
 
 # print("final deps : {} len {}".format(Counter(list(set(pScenarioMetricProvidersIds))),len(list(set(pScenarioMetricProvidersIds)))))
 
@@ -206,20 +241,24 @@ scavaRegisteredProjects = getProjects()
 # print(scavaRegisteredProjects)
 
 # create tasks
-
+print(projectUrlsToRegister)
 for project in scavaRegisteredProjects:
     # print(project['homePage'])
     if('html_url' in project and project['html_url'] in projectUrlsToRegister):
         pShortName = project['shortName']
+        print('html_url found')
     elif('homePage' in project and project['homePage'] in projectUrlsToRegister):
         pShortName = project['shortName']
+        print('homePage found')
     else:
-        print("here")
-        sys.exit()
+        continue
 
-    tasks = {'projectScenario': pScenarioMetricProvidersIds,
-             'userScenario': allMetricProvidersIds}
-    print(pScenarioMetricProvidersIds)
+    tasks = {
+        'projectScenario': pScenarioMetricProvidersIds,
+        'userScenario': uScenarioMetricProvidersIds
+    }
+
+    # print(pScenarioMetricProvidersIds)
     for task, metricProvidersIds in tasks.items():
         print('will create task {} for project {}'.format(
             task, project['shortName']))
