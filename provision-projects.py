@@ -104,10 +104,11 @@ pScenarioMetricProvidersIds = ['org.eclipse.scava.metricprovider.historic.bugs.u
                                'trans.rascal.OO.java.LCC-Java-Quartiles.historic',
                                'trans.rascal.OO.java.LCOM4-Java-Quartiles.historic',
                                'trans.rascal.LOC.genericLOCoverFiles.historic',
-                               'trans.rascal.OO.java.MHF-Java.historic',
+                               #'trans.rascal.OO.java.MHF-Java.historic',
                                'trans.rascal.OO.java.PF-Java.historic',
                                #'trans.rascal.OO.java.TCC-Java-Quartiles.historic',
-                               'rascal.testability.java.TestCoverage.historic']
+                               #'rascal.testability.java.TestCoverage.historic'
+                               ]
 
 uScenarioMetricProvidersIds = ['org.eclipse.scava.metricprovider.indexing.commits.CommitsIndexingMetricProvider',
                                'org.eclipse.scava.metricprovider.indexing.bugs.BugsIndexingMetricProvider',
@@ -254,16 +255,17 @@ for project in scavaRegisteredProjects:
         continue
 
     tasks = {
-        'projectScenario': pScenarioMetricProvidersIds,
-        'userScenario': uScenarioMetricProvidersIds
+        'all': allMetricProvidersIds
+        #'projectScenario': pScenarioMetricProvidersIds,
+        #'userScenario': uScenarioMetricProvidersIds
     }
 
     # print(pScenarioMetricProvidersIds)
     for task, metricProvidersIds in tasks.items():
         print('will create task {} for project {}'.format(
             task, project['shortName']))
-        json = {"analysisTaskId": project['shortName'] + ":" + task, "label": task, "type": "SINGLE_EXECUTION",
-                "startDate": "01/01/2018", "endDate": "31/12/2018", "projectId": pShortName, "metricProviders": metricProvidersIds}
+        json = {"analysisTaskId": project['shortName'] + ":" + task, "label": task, "type": "CONTINUOUS_MONITORING",
+                "startDate": "01/01/2018", "projectId": pShortName, "metricProviders": metricProvidersIds}
         # print(json)
         try:
             r = requests.post(scavaApiGwUrl + '/administration/analysis/task/create',
